@@ -37,26 +37,26 @@ RUN pip3 install \
   spacy
 
 RUN pip3 install \
-  rasa \
+  rasa \ #no
   nltk \
   textblob \
   tensorflow==2.1.0 \
-  tensorlayer \
+  tensorlayer \ #no
   keras \
   scipy \
   flask \
   tensorboard==2.1.0 \
-  jupyter-tensorboard \
+  jupyter-tensorboard \ #no
   prompt-toolkit==1.0.15
 
 RUN pip3 install rasa-x -i https://pypi.rasa.com/simple
 
 RUN pip3 install \
-  xai \
-  aix360 \
-  shap \
-  lime \
-  matplotlib2tikz 
+  xai \ #no
+  aix360 \ #no
+  shap \ #no
+  lime \ #no
+  matplotlib2tikz #no
 
 EXPOSE 8888
 EXPOSE 9000
